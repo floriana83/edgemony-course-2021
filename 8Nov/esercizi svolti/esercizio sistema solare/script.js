@@ -80,4 +80,11 @@
  }
 
  const itaPlanet = solarSystem.map(itaMap)
- console.log(itaPlanet)
+//  console.log(itaPlanet)
+
+ const diametro = (pianeti) => {
+   pianeti.diametro = pianeti.radius * 2;
+  return pianeti
+}
+const diametroP = solarSystem.map(itaMap).map(diametro)
+console.log(diametroP)
