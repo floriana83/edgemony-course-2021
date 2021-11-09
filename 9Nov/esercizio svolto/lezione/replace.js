@@ -1,3 +1,5 @@
+/////////////////// calcolatrice con replace
+
 
 function minimalCalc(numbers) {
   const sum = () => numbers.reduce((acc, num) => acc + num);
@@ -7,12 +9,12 @@ function minimalCalc(numbers) {
   // potenza base [0] exp [1] 
   // const pow = () => numbers.map(num => Math.pow(num,numbers[1]));
  // eleva al quadrato gli elementi dell'array
- 
-  const pow = () => numbers.map(num => Math.pow(num,2));
+  // const pow = () => numbers.map(num => Math.pow(num,2));
   // const pow = () => numbers.map(num => num * num);
 
-
-  const sqrt = () => numbers.map(num => Math.sqrt (num));
+  const pow = () => numbers.reduce((acc, num) => (acc[num] = Math.pow(num,2), acc), {});
+  const sqrt = () => numbers.reduce((acc, num) => (acc[num] =  Math.sqrt (num), acc), {});
+  // const sqrt = () => numbers.map(num => Math.sqrt (num));
 
   return {
     sum: sum(),
