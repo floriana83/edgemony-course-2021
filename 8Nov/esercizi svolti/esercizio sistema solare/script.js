@@ -82,9 +82,17 @@
  const itaPlanet = solarSystem.map(itaMap)
 //  console.log(itaPlanet)
 
+// definisce il diametro dei piani tramite una funzione
  const diametro = (pianeti) => {
    pianeti.diametro = pianeti.radius * 2;
   return pianeti
 }
+
+
 const diametroP = solarSystem.map(itaMap).map(diametro)
 console.log(diametroP)
+
+
+// restituisce solo il diametro dei pianteni tramite una funzione 
+const diameter = solarSystem.map(d => d.radius *2);
+console.log (diameter);
