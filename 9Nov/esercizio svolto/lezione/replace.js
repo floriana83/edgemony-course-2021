@@ -1,5 +1,13 @@
 /////////////////// calcolatrice con replace
+try {
+  if (minimalCalc !== "") throw `Nessun parametro passato alla funzione`;
 
+
+}catch (err) {
+  console.log(err);
+}finally {
+  console.log("Ottimo lavoro!")
+};
 
 function minimalCalc(numbers) {
   const sum = () => numbers.reduce((acc, num) => acc + num);
