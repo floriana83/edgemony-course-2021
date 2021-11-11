@@ -2,27 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 :root {
   --main_color: black;
+
 }
 
 main {
-  background-color: rgb(13, 102, 57);
+
   padding: 20px 20px;
+  background-image: url(https://www.yourinspirationweb.com/wp-content/uploads/2014/03/nuvole.jpg);
+
 }
 img.logo {
   width: 80px;
-  display: inline-flex;
-
+  position: relative;
+  /* align-self:center; */
 }
 .nome {
-  color: rgb(5, 168, 54);
+  color: rgb(47, 96, 202);
 }
 body {
-  
-  background-color: rgb(113, 243, 204);
+  margin: 0px;
+  /* background-color: black; */
+  background-color:rgb(202, 219, 255);
 }
 
 h1 {
-  color: white;
+  color: rgb(36, 21, 126);
   font-family: "Mochiy", sans-serif;
 }
 h4 {
@@ -31,9 +35,12 @@ h4 {
   color: var(--main_color);
 }
 
+#search, button{
+  border-radius: 20px;
+}
 
 .product img {
-  width: 60px;
+  width: 50px;
 }
 
 strong {
@@ -52,33 +59,34 @@ strong {
 }
 
 .wrapper__titles {
-  display: flex;
+  /* display: flex; */
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
-  font-size: large;
+  font-size: large; 
+  font-family: "Mochiy", sans-serif;
 }
 
-.wrapper__titles h1 {
+/* .wrapper__titles h1 {
   font-size: 2rem;
+} */
+
+.wrapper__titles h5 {
+  font-size: 14px;
+  color: rgb(25, 22, 177);
+  font-family: "Mochiy", sans-serif;
+
 }
 
-.wrapper__titles h4 {
-  font-size: 0.9rem;
-}
-
-.wrapper__products {
+.wrapper__products, .wrapper__productsTwo {
   font-family: "Mohave", sans-serif;
   margin: 20px 40px;
   height: 38vh;
   display: flex;
   overflow-y: hidden;
+  font-size: 12px;
 }
-.wrapper__productsTwo {
-  font-family: "Mohave", sans-serif;
-  margin: 20px 40px;
-  height: 38vh;
-  display: flex;
-  overflow-y: hidden;
-}
+
 
 
 .product {
@@ -101,7 +109,7 @@ strong {
 
 .product:hover {
   transform: scale(0.9);
-  border: 2px solid var(--main_color);
+  border: 2px solid rgb(8, 247, 115);
 }
 
 .product:active {
@@ -112,3 +120,25 @@ strong {
 .product p {
   align-self: flex-start;
 }
+
+
+/* footer */
+
+footer p{
+  background: #000;
+  color: rgb(20, 85, 172);
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 14px;
+  background-image: url(https://www.yourinspirationweb.com/wp-content/uploads/2014/03/nuvole.jpg);
+}
+
+footer a{
+  color: #fff;
+}
+
+footer a:hover{
+  color: royalblue;
+  text-decoration: none;
+}
+

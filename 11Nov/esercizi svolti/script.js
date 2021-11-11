@@ -23,14 +23,15 @@ function createText(parent, productTitle, textPrice) {
   title.textContent = productTitle;
 
   const price = document.createElement("strong");
-  price.textContent = `${textPrice} $`;
+  price.textContent = `${textPrice} €`;
 
   parent.append(title, price);
 }
 
-
 const wrapperProducts = document.querySelector(".wrapper__products");
 const wrapperProductsTwo = document.querySelector(".wrapper__productsTwo"); 
+// const form = document.querySelector("input form")
+
 
   products.map((product) => {
     createProduct(wrapperProducts, product.image, product.title, product.price);
@@ -38,3 +39,4 @@ const wrapperProductsTwo = document.querySelector(".wrapper__productsTwo");
   productsTwo.map((product) => {
     createProduct(wrapperProductsTwo, product.image, product.title, product.price);
   });
+
