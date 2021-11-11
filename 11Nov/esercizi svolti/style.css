@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+:root {
+  --main_color: black;
+}
+
+main {
+  background-color: rgb(13, 102, 57);
+  padding: 20px 20px;
+}
+img.logo {
+  width: 80px;
+  display: inline-flex;
+
+}
+.nome {
+  color: rgb(5, 168, 54);
+}
+body {
+  
+  background-color: rgb(113, 243, 204);
+}
+
+h1 {
+  color: white;
+  font-family: "Mochiy", sans-serif;
+}
+h4 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: var(--main_color);
+}
+
+
+.product img {
+  width: 60px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.cart {
+  text-align: right;
+  width: 80px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper__titles {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
+.wrapper__titles h1 {
+  font-size: 2rem;
+}
+
+.wrapper__titles h4 {
+  font-size: 0.9rem;
+}
+
+.wrapper__products {
+  font-family: "Mohave", sans-serif;
+  margin: 20px 40px;
+  height: 38vh;
+  display: flex;
+  overflow-y: hidden;
+}
+.wrapper__productsTwo {
+  font-family: "Mohave", sans-serif;
+  margin: 20px 40px;
+  height: 38vh;
+  display: flex;
+  overflow-y: hidden;
+}
+
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7.5px;
+  padding: 10px;
+  background-color: white;
+  min-width: 150px;
+
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 12px;
+
+  opacity: 0.78;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.product:hover {
+  transform: scale(0.9);
+  border: 2px solid var(--main_color);
+}
+
+.product:active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product p {
+  align-self: flex-start;
+}
